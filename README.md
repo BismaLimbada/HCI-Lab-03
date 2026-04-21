@@ -1,4 +1,4 @@
-# Lab 03: Interactive Feedback and System State
+# Lab 03: Interactive Feedback
 ---
 
 ### Student Information
@@ -8,17 +8,15 @@
 
 ---
 
-## 1. Objective
-This lab uses JavaScript to implement **Visibility of System State** and real-time user feedback.
+## 1. Goal
+Using JavaScript to show the **System State** and give user feedback.
 
-## 2. HCI Concepts Applied
-* **Visibility of System State:** A status `div` updates constantly to show the user exactly what is happening.
-* **Feedback:** * **Hover:** The button changes color on `mouseover` to show it is clickable.
-    * **Click:** The button shrinks slightly (`scale(0.95)`) when pressed to mimic a physical click.
-* **Constraints:** A click limit is set to prevent errors. After 3 clicks, the system stops further input.
+## 2. Key Concepts
+* **System State:** A status text updates to show the click count.
+* **Feedback:** The button shrinks on click and changes color on hover.
+* **Constraint:** The button is disabled after 3 clicks to prevent further action.
 
-## 3. Implementation
-* **Logic:** A counter tracks clicks. Once it hits the limit, `btn.disabled = true` is executed.
-* **Visuals:** The button fades to 50% opacity and a red warning (⚠️) appears when the limit is reached.
+## 3. Results
+The button fades and shows a red warning (⚠️) when the limit is hit.
 
 ---
